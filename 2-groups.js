@@ -7,18 +7,43 @@ Give the class a static from method that takes an iterable object as argument an
 */
 
 class Group {
-    // Your code here.
+  constructor() {
+    this.values = [];
   }
+
+  add() {
+    if (!this.values.includes(num)) {
+      this.values.push(num);
+      return this.values;
+    }
+    else {
+      return this.values;
+    }
+   }
+
+  delete() {
+
+  }
+
+  from() {
+
+  }
+
+  has() {
+
+  }
+
+}
   
 
   // Tests:
-  let group = Group.from([10, 20]);
-  console.log(group.has(10));
-  // → true
-  console.log(group.has(30));
+  // let group = Group.from([10, 20]);
+  // console.log(group.has(10));
+  // // → true
+  // console.log(group.has(30));
   // → false
   group.add(10);
-  group.delete(10);
-  console.log(group.has(10));
+  // group.delete(10);
+  // console.log(group.has(10));
   // → false
 

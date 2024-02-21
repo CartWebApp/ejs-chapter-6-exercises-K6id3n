@@ -18,10 +18,10 @@ class Vec {
     }
 
     get length() {
-        this.x **2;
-        this.y **2;
-        Math.sqrt(this.x += this.y);
-        return ;
+        this.x **=2;
+        this.y **=2;
+        const output = Math.sqrt(this.x += this.y);
+        return output;
     }
 }
 // Give the Vec prototype two methods, plus and minus, that take another vector as a parameter and return a new vector that has the sum or difference of the two vectors’ (this and the parameter) x and y values.
